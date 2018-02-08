@@ -16,11 +16,12 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 
 public class MyFXGLApp extends GameApplication {
-	private Entity player,player2;
+	private Entity player1,player2,ball;
 	public int count=2;
+	private int y;
 	
 	public enum EntityType {
-	    PLAYER, PLAYER1
+	    PLAYER, PLAYER2, Ball;
 	}
 	@Override
 	protected void initSettings(GameSettings settings) {
@@ -35,136 +36,36 @@ public class MyFXGLApp extends GameApplication {
 	@Override
 	protected void initInput() {
 		super.initInput();
-		Input input = getInput();
-	    input.addAction(new UserAction("Player1 Move Right") {
-	        @Override
-	        protected void onAction() {
-	            player.translateX(5); // move right 5 pixels
-	            getGameState().increment("pixelsMoved", +5);   
-	            if(count!=7 || count == 4)count++;
-		    		else count = 2;
-		    		player.setViewFromTextureWithBBox("cat"+count+".png");
-	        }
-	    }, KeyCode.D);
-	    input.addAction(new UserAction("Player1 Move Left") {
-	        @Override
-	        protected void onAction() {
-	            player.translateX(-5); // move right 5 pixels
-	            getGameState().increment("pixelsMoved", +5);  
-	            if(count!=7 || count == 4)count++;
-		    		else count = 2;
-	            
-		    		player.setViewFromTextureWithBBox("cat"+count+".png");
-	        }
-	    }, KeyCode.A);
-	    input.addAction(new UserAction("Player1 Move Up") {
-	        @Override
-	        protected void onAction() {
-	            player.translateY(-5); // move right 5 pixels
-	            getGameState().increment("pixelsMoved", +5);   
-	            if(count!=7  || count == 4)count++;
-		    		else count = 2;
-		    		player.setViewFromTextureWithBBox("cat"+count+".png");
-	        }
-	    }, KeyCode.W);
-	    input.addAction(new UserAction("Player1 Move Down") {
-	        @Override
-	        protected void onAction() {
-	            player.translateY(5); // move right 5 pixels
-	            getGameState().increment("pixelsMoved", +5);
-	            if(count!=7 || count == 4)count++;
-		    		else count = 2;
-		    		player.setViewFromTextureWithBBox("cat"+count+".png");
-
-	        }
-	    }, KeyCode.S);
-	    input.addAction(new UserAction("Player2 Move Up") {
-	        @Override
-	        protected void onAction() {
-	            player2.translateY(-5); // move right 5 pixels
-	            getGameState().increment("pixelsMoved", +5);
-	            
-	        }
-	    }, KeyCode.UP);
-	    input.addAction(new UserAction("Player2 Move Down") {
-	        @Override
-	        protected void onAction() {
-	            player2.translateY(5); // move right 5 pixels
-	            getGameState().increment("pixelsMoved", +5);    
-	        }
-	    }, KeyCode.DOWN);
-	    input.addAction(new UserAction("Player2 Move Right") {
-	        @Override
-	        protected void onAction() {
-	            player2.translateX(5); // move right 5 pixels
-	            getGameState().increment("pixelsMoved", +5);    
-	        }
-	    }, KeyCode.RIGHT);
-	    input.addAction(new UserAction("Player2 Move Left") {
-	        @Override
-	        protected void onAction() {
-	            player2.translateX(-5); // move right 5 pixels
-	            getGameState().increment("pixelsMoved", +5);    
-	        }
-	    }, KeyCode.LEFT);
-		
-
 	    
 	}
 
 	@Override
 	protected void initGame() {
 		super.initGame();
-		player = Entities.builder().at(300, 300)
-		        .type(EntityType.PLAYER)
-		        .with(new CollidableComponent(true))
-				.viewFromTextureWithBBox("cat2.png")
-				.buildAndAttach(getGameWorld());
-		
-//		player.setScaleX(0.4);
-//		player.setScaleY(0.4);
-
-		player2 = Entities.builder().at(700, 500)
-		        .type(EntityType.PLAYER1)
-		        .with(new CollidableComponent(true))
-				.viewFromTextureWithBBox("bird.png")
-				.buildAndAttach(getGameWorld());
-		
-//		player2.setScaleX(.2);
-//		player2.setScaleY(.2);
-
 		
 	}
 
 	@Override
 	protected void initUI() {
 		super.initUI();
-		Text textPixels = new Text();
-	    textPixels.setTranslateX(50); // x = 50
-	    textPixels.setTranslateY(100); // y = 100
-	    getGameScene().addUINode(textPixels);
-	    textPixels.textProperty().bind(getGameState().intProperty("pixelsMoved").asString());
+		
 	}
 
 	@Override
 	protected void initGameVars(Map<String, Object> vars) {
-	    vars.put("pixelsMoved", 0);
 		super.initGameVars(vars);
 	}
 
 	@Override
 	protected void initPhysics() {
-		getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.PLAYER, EntityType.PLAYER1) {
-
-	        // order of types is the same as passed into the constructor
+		getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.PLAYER, EntityType.Ball) {
 	        @Override
-	        protected void onCollisionBegin(Entity player, Entity player2) {
-	            getAudioPlayer().playSound("explosion.wav");
-	            player2.removeFromWorld();
-	            getGameWorld().addEntity(player2);
+	        protected void onCollisionBegin(Entity player1, Entity ball) {
 
 	        }
 	    });
+		
+		
 		super.initPhysics();
 	}
 
