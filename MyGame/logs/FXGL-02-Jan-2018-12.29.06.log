@@ -1,0 +1,159 @@
+12:28:53.700 [JavaFX Application Thread] DEBUG GameApplication      - Logger initialized
+12:28:54.636 [JavaFX Application Thread] DEBUG GameApplication      - Starting FXGL
+12:28:54.636 [JavaFX Application Thread] INFO  Version              - FXGL-0.4.0
+12:28:54.637 [JavaFX Application Thread] INFO  Version              - Source code and latest versions at: https://github.com/AlmasB/FXGL
+12:28:54.637 [JavaFX Application Thread] INFO  Version              -              Join the FXGL chat at: https://gitter.im/AlmasB/FXGL
+12:28:54.722 [FXGL Launcher Thread     ] DEBUG FXGL                 - Loading FXGL system data
+12:28:54.729 [FXGL Launcher Thread     ] DEBUG IOTask               - Executing task: readDataTask(system/fxgl.bundle)
+12:28:54.748 [FXGL Launcher Thread     ] DEBUG FS                   - Reading from: system/fxgl.bundle
+12:28:54.768 [FXGL Launcher Thread     ] DEBUG IOTask               - Task succeeded: readDataTask(system/fxgl.bundle)
+12:28:54.769 [FXGL Launcher Thread     ] DEBUG Bundle               - Logging bundle: FXGL
+12:28:54.770 [FXGL Launcher Thread     ] DEBUG Bundle               - FXGL.offline.timer.version.check=2017-12-20T22:26:57.887
+12:28:54.771 [FXGL Launcher Thread     ] DEBUG GameApplication      - FXGL configuration complete
+12:28:54.776 [FXGL Launcher Thread     ] INFO  GameApplication      - FXGL configuration took:  0.133 sec
+12:28:54.777 [FXGL Launcher Thread     ] DEBUG GameApplication      - Logging game settings
+Title: My App
+Version: 0.1
+Width: 1280
+Height: 780
+Fullscreen: false
+Intro: false
+Menus: false
+Profiling: false
+Single step:false
+App Mode: DEVELOPER
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class com.almasb.fxgl.scene.SceneFactory
+Dialog Factory: class com.almasb.fxgl.ui.FXGLDialogFactory
+UI Factory: class com.almasb.fxgl.ui.FXGLUIFactory
+Notification Service: class com.almasb.fxgl.gameplay.notification.XboxNotificationView
+Exception Handler: class com.almasb.fxgl.app.FXGLExceptionHandler
+12:28:54.841 [JavaFX Application Thread] DEBUG UpdaterTask          - Checking for updates
+12:28:54.936 [JavaFX Application Thread] DEBUG IOTask               - Showing dialog
+12:28:54.940 [FXGL Background Thread 1 ] DEBUG IOTask               - Executing task: openStream(https://raw.githubusercontent.com/AlmasB/FXGL/master/pom.xml)
+12:28:54.940 [FXGL Background Thread 1 ] DEBUG IOTask               - Executing task: openStream(https://raw.githubusercontent.com/AlmasB/FXGL/master/pom.xml)
+12:28:55.354 [JavaFX Application Thread] DEBUG IOTask               - fail(): Dismissing dialog
+12:28:55.354 [JavaFX Application Thread] WARN  IOTask               - Task failed: openStream(https://raw.githubusercontent.com/AlmasB/FXGL/master/pom.xml) Error: java.net.UnknownHostException: raw.githubusercontent.com
+12:28:55.355 [JavaFX Application Thread] WARN  UpdaterTask          - Failed to find updates: java.net.UnknownHostException: raw.githubusercontent.com
+12:28:56.760 [FXGL Launcher Thread     ] DEBUG GameApplication      - Configuring GameApplication
+12:28:56.765 [FXGL Launcher Thread     ] DEBUG AppStateMachine      - Initializing application states
+12:28:56.778 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+12:28:56.805 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+12:28:56.814 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/sounds/core/notification.wav
+12:28:56.865 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/select.wav
+12:28:56.867 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/back.wav
+12:28:56.869 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/sounds/menu/press.wav
+12:28:56.872 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/ui/fonts/VarelaRound-Regular.ttf
+12:28:56.881 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/ui/fonts/lucida_console.ttf
+12:28:56.887 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+12:28:56.887 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/ui/icons/fxgl_icon.png
+12:28:56.938 [FXGL Launcher Thread     ] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+12:28:56.964 [FXGL Launcher Thread     ] DEBUG FXGL.GameScene       - Game scene initialized: 1280x780
+12:28:56.968 [FXGL Launcher Thread     ] DEBUG FXGL.GameWorld       - Game world initialized
+12:28:57.109 [FXGL Launcher Thread     ] DEBUG FXGL.PhysicsWorld    - Physics world initialized: appHeight=780, physics.ppm=50.0
+12:28:57.134 [FXGL Launcher Thread     ] DEBUG Input                - Registered new binding: Pause - Esc
+12:28:57.150 [FXGL Launcher Thread     ] INFO  GameApplication      - Game configuration took:  0.389 sec
+12:28:57.152 [JavaFX Application Thread] DEBUG MainWindow           - App size > screen size
+12:28:57.152 [JavaFX Application Thread] DEBUG MainWindow           - Target size: 1280.0 x 780.0 @ 1.0
+12:28:57.153 [JavaFX Application Thread] DEBUG MainWindow           - New size:    1222.0 x 744.65625 @ 0.9546875
+12:28:57.153 [JavaFX Application Thread] DEBUG MainWindow           - Opening main window
+12:28:57.225 [JavaFX Application Thread] DEBUG MainWindow           - Root size:  1280.0x780.0
+12:28:57.225 [JavaFX Application Thread] DEBUG MainWindow           - Scene size: 1280.0x780.0
+12:28:57.225 [JavaFX Application Thread] DEBUG MainWindow           - Stage size: 1280.0x802.0
+12:28:57.225 [JavaFX Application Thread] DEBUG GameApplication      - Running preInit()
+12:28:57.385 [JavaFX Application Thread] DEBUG AnnotationParser     - @SetAchievementStore: []
+12:28:57.387 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - P
+12:28:57.387 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Dev Options - CTRL+0
+12:28:57.387 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Player1 Move Right - D
+12:28:57.388 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Player1 Move Left - A
+12:28:57.388 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Player1 Move Up - W
+12:28:57.388 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Player1 Move Down - S
+12:28:57.388 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Player2 Move Up - Up
+12:28:57.388 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Player2 Move Down - Down
+12:28:57.389 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Player2 Move Right - Right
+12:28:57.389 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Player2 Move Left - Left
+12:28:57.471 [JavaFX Application Thread] DEBUG GameApplication      - Starting main loop
+12:28:57.491 [JavaFX Application Thread] DEBUG StartupState         - STARTUP
+12:28:57.491 [JavaFX Application Thread] DEBUG GameApplication      - Starting new game
+12:28:57.491 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+12:28:57.491 [JavaFX Application Thread] DEBUG AppStateMachine      - StartupState -> LoadingState
+12:28:57.539 [JavaFX Application Thread] DEBUG InitAppTask          - Parsing annotations
+12:28:57.599 [JavaFX Application Thread] DEBUG AnnotationParser     - @SetEntityFactory: []
+12:28:57.601 [JavaFX Application Thread] DEBUG AnnotationParser     - @SetEventHandler: []
+12:28:57.601 [JavaFX Application Thread] DEBUG AnnotationParser     - @AddCollisionHandler: []
+12:28:57.604 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Clearing previous game
+12:28:57.604 [FXGL Background Thread 1 ] DEBUG FXGL.GameWorld       - Clearing game world
+12:28:57.605 [FXGL Background Thread 1 ] DEBUG FXGL.PhysicsWorld    - Clearing physics world
+12:28:57.606 [FXGL Background Thread 1 ] DEBUG FXGL.GameScene       - Clearing game scene
+12:28:57.606 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Assets
+12:28:57.615 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Game
+12:28:57.681 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from disk: /assets/textures/cat2.png
+12:28:57.695 [FXGL Background Thread 1 ] DEBUG FXGL.GameScene       - Creating render group for layer: TOP(2147483647)
+12:28:57.703 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from disk: /assets/textures/jerry.png
+12:28:57.738 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Physics
+12:28:57.740 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing UI
+12:28:57.742 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initialization Complete
+12:28:57.743 [FXGL Background Thread 1 ] INFO  InitAppTask          - Game initialization took: 0.139 sec
+12:28:57.759 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+12:28:57.759 [JavaFX Application Thread] DEBUG AppStateMachine      - LoadingState -> PlayState
+12:29:00.576 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/cat3.png
+12:29:00.594 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/cat4.png
+12:29:00.609 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/cat5.png
+12:29:00.625 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/cat6.png
+12:29:00.642 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/cat7.png
+12:29:00.659 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat2.png
+12:29:00.675 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat3.png
+12:29:00.692 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat4.png
+12:29:00.709 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat5.png
+12:29:00.725 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat6.png
+12:29:00.742 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat7.png
+12:29:00.759 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat2.png
+12:29:00.776 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat3.png
+12:29:00.792 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat4.png
+12:29:00.809 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat5.png
+12:29:00.826 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat6.png
+12:29:00.842 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat7.png
+12:29:00.859 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat2.png
+12:29:00.875 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat3.png
+12:29:00.892 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat4.png
+12:29:00.909 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat5.png
+12:29:00.926 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat6.png
+12:29:00.942 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat7.png
+12:29:00.959 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat2.png
+12:29:00.975 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat3.png
+12:29:00.992 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat4.png
+12:29:01.009 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat5.png
+12:29:01.025 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat6.png
+12:29:01.042 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat7.png
+12:29:01.058 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat2.png
+12:29:01.075 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat3.png
+12:29:01.957 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat4.png
+12:29:01.975 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat5.png
+12:29:01.992 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat6.png
+12:29:02.008 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat7.png
+12:29:02.026 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat2.png
+12:29:02.042 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat3.png
+12:29:02.058 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat4.png
+12:29:02.076 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat5.png
+12:29:02.092 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat6.png
+12:29:02.109 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat7.png
+12:29:02.125 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat2.png
+12:29:02.141 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat3.png
+12:29:02.158 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat4.png
+12:29:02.509 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat5.png
+12:29:02.525 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat6.png
+12:29:02.542 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat7.png
+12:29:02.558 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat2.png
+12:29:02.576 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat3.png
+12:29:02.591 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat4.png
+12:29:02.609 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat5.png
+12:29:02.626 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/cat6.png
+12:29:06.002 [JavaFX Application Thread] DEBUG GameApplication      - Exiting game application
+12:29:06.004 [JavaFX Application Thread] DEBUG GameApplication      - Shutting down background threads
+12:29:06.004 [JavaFX Application Thread] DEBUG GameApplication      - Exiting FXGL
+12:29:06.004 [JavaFX Application Thread] DEBUG FXGL                 - Saving FXGL system data
+12:29:06.006 [JavaFX Application Thread] DEBUG IOTask               - Executing task: writeDataTask(system/fxgl.bundle)
+12:29:06.008 [JavaFX Application Thread] DEBUG FS                   - Writing to: system/fxgl.bundle
+12:29:06.019 [JavaFX Application Thread] DEBUG IOTask               - Task succeeded: writeDataTask(system/fxgl.bundle)
+12:29:06.019 [JavaFX Application Thread] DEBUG GameApplication      - Closing logger and exiting JavaFX
